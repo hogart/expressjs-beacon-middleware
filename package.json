@@ -25,6 +25,10 @@
     "jscs": "^1.13.1",
     "mocha": "^2.2.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hogart/expressjs-beacon-middleware.git"
+  },
   "jscsConfig": {
     "requireSpaceAfterKeywords": [
       "if",
