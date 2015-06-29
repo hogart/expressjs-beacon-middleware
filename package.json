@@ -1,0 +1,69 @@
+{
+  "name": "expressjs-beacon-middleware",
+  "version": "0.1.0",
+  "description": "Middleware that provides some value for res.locals and periodically updates it",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "jscs . && eslint --ignore-path .gitignore .",
+    "unit": "mocha -u bdd -R spec --recursive test",
+    "coverage": "istanbul cover mocha -- -u bdd -R spec --recursive test",
+    "test": "npm run lint && npm run coverage"
+  },
+  "keywords": [
+    "expressjs",
+    "middleware"
+  ],
+  "author": "Konstantin Kitmanov <doctor.hogart@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "eslint": "^0.23.0",
+    "istanbul": "^0.3.17",
+    "jscs": "^1.13.1",
+    "mocha": "^2.2.5"
+  },
+  "jscsConfig": {
+    "requireSpaceAfterKeywords": [
+      "if",
+      "for",
+      "while",
+      "do",
+      "switch",
+      "try",
+      "catch"
+    ],
+    "disallowKeywordsOnNewLine": [
+      "else"
+    ],
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "disallowMultipleLineStrings": true,
+    "requireSpaceBeforeBinaryOperators": true,
+    "requireSpaceAfterBinaryOperators": true,
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "excludeFiles": [
+      "node_modules",
+      "coverage"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-underscore-dangle": [
+        0
+      ],
+      "quotes": [
+        2,
+        "single",
+        "avoid-escape"
+      ],
+      "eol-last": [
+        0
+      ]
+    }
+  }
+}
