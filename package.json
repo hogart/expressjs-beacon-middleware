@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "jscs . && eslint --ignore-path .gitignore .",
     "unit": "mocha -u bdd -R spec --recursive test",
-    "coverage": "istanbul cover mocha -- -u bdd -R spec --recursive test",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- -u bdd -R spec --recursive test",
     "test": "npm run lint && npm run coverage"
   },
   "keywords": [
